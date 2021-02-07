@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const CharDetails = styled.article`
     border-top: 0.2rem solid #672F14;
     position:relative;
-
+    transition: all 2s ease;
 `
 
 const Details = props => {
@@ -23,7 +23,7 @@ const [active, setActive] = useState(false);
             <p>Height: {detail.height}</p>
             <p>Weight: {detail.mass}</p>
             <button onClick={toggle} >Film Appearances: </button>
-           <Films active={active} films = {detail.films} />
+           <Films active ={active} films ={detail.films} />
         </CharDetails>
 
     )
